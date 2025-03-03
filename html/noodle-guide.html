@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noodle World - 국수 도감</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #fae1af);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#fdf6e3] to-[#fae1af]">
+    <!-- 네비게이션 바 -->
+    <nav
+      class="bg-yellow-600 p-4 shadow-lg flex justify-between items-center rounded-b-2xl"
+    >
+      <h1 class="text-3xl font-extrabold text-white">🍜 Noodle World</h1>
+      <ul class="hidden md:flex gap-8 text-white text-lg">
+        <li><a href="index.html" class="hover:underline">홈</a></li>
+        <li>
+          <a href="noodle-guide.html" class="hover:underline">국수 도감</a>
+        </li>
+        <li><a href="recipes.html" class="hover:underline">레시피</a></li>
+        <li>
+          <a href="restaurants.html" class="hover:underline">맛집 추천</a>
+        </li>
+        <li><a href="community.html" class="hover:underline">커뮤니티</a></li>
+        <li><a href="mypage.html" class="hover:underline">마이페이지</a></li>
+      </ul>
+    </nav>
+
+    <!-- 국수 도감 페이지 -->
+    <div class="text-center p-8">
+      <h2 class="text-5xl font-extrabold text-gray-800">🌏 국수 도감</h2>
+      <p class="text-gray-700 mt-3 text-lg">
+        세계 각국의 다양한 국수를 살펴보세요!
+      </p>
+    </div>
+
+    <section class="p-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img src="/images/ramen.jpg" alt="Ramen" class="rounded-2xl w-full" />
+          <h3 class="text-2xl font-bold mt-4">
+            <a
+              href="noodle-guide-detail.html"
+              class="text-blue-600 hover:underline"
+              >라멘 (Ramen)</a
+            >
+          </h3>
+          <p class="text-gray-700">
+            일본의 대표적인 면 요리로, 진한 국물과 쫄깃한 면이 특징입니다.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img src="/images/udon.jpg" alt="Udon" class="rounded-2xl w-full" />
+          <h3 class="text-2xl font-bold mt-4">우동 (Udon)</h3>
+          <p class="text-gray-700">
+            일본의 두꺼운 밀가루 면으로, 가쓰오부시 국물과 함께 제공됩니다.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img src="/images/soba.jpg" alt="Soba" class="rounded-2xl w-full" />
+          <h3 class="text-2xl font-bold mt-4">소바 (Soba)</h3>
+          <p class="text-gray-700">
+            메밀로 만든 면으로, 차갑게 혹은 따뜻하게 먹을 수 있습니다.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img src="/images/pasta.jpg" alt="Pasta" class="rounded-2xl w-full" />
+          <h3 class="text-2xl font-bold mt-4">파스타 (Pasta)</h3>
+          <p class="text-gray-700">
+            이탈리아의 대표적인 면 요리로, 다양한 소스와 함께 즐길 수 있습니다.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img src="/images/pho.jpg" alt="Pho" class="rounded-2xl w-full" />
+          <h3 class="text-2xl font-bold mt-4">쌀국수 (Pho)</h3>
+          <p class="text-gray-700">
+            베트남의 대표적인 쌀국수 요리로, 맑은 국물과 부드러운 면이
+            특징입니다.
+          </p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/jajangmyeon.jpg"
+            alt="Jajangmyeon"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">자장면 (Jajangmyeon)</h3>
+          <p class="text-gray-700">
+            중국에서 유래한 한국식 짜장 소스와 쫄깃한 면이 특징입니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer
+      class="bg-yellow-700 text-white text-center p-6 mt-8 rounded-t-2xl shadow-lg"
+    >
+      <p class="text-lg">&copy; 2025 Noodle World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

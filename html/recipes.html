@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noodle World - 레시피</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #fae1af);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#fdf6e3] to-[#fae1af]">
+    <!-- 네비게이션 바 -->
+    <nav
+      class="bg-yellow-600 p-4 shadow-lg flex justify-between items-center rounded-b-2xl"
+    >
+      <h1 class="text-3xl font-extrabold text-white">🍜 Noodle World</h1>
+      <ul class="hidden md:flex gap-8 text-white text-lg">
+        <li><a href="index.html" class="hover:underline">홈</a></li>
+        <li>
+          <a href="noodle-guide.html" class="hover:underline">국수 도감</a>
+        </li>
+        <li><a href="recipes.html" class="hover:underline">레시피</a></li>
+        <li>
+          <a href="restaurants.html" class="hover:underline">맛집 추천</a>
+        </li>
+        <li><a href="community.html" class="hover:underline">커뮤니티</a></li>
+        <li><a href="mypage.html" class="hover:underline">마이페이지</a></li>
+      </ul>
+    </nav>
+
+    <!-- 레시피 페이지 -->
+    <div class="text-center p-8">
+      <h2 class="text-5xl font-extrabold text-gray-800">🍳 국수 레시피</h2>
+      <p class="text-gray-700 mt-3 text-lg">
+        맛있는 국수 요리를 직접 만들어보세요!
+      </p>
+    </div>
+
+    <section class="p-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-6">
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/ramen_recipe.jpg"
+            alt="Ramen Recipe"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">
+            <a href="recipes-detail.html" class="text-blue-600 hover:underline"
+              >라멘 (Ramen) 레시피
+            </a>
+          </h3>
+          <p class="text-gray-700">진한 국물과 쫄깃한 면을 만드는 비법</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/udon_recipe.jpg"
+            alt="Udon Recipe"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">우동 레시피</h3>
+          <p class="text-gray-700">간단한 재료로 만드는 따뜻한 우동</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/pasta_recipe.jpg"
+            alt="Pasta Recipe"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">파스타 레시피</h3>
+          <p class="text-gray-700">이탈리아 정통 파스타 만들기</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/pho_recipe.jpg"
+            alt="Pho Recipe"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">쌀국수 레시피</h3>
+          <p class="text-gray-700">깊은 맛의 베트남 쌀국수 만들기</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/jajangmyeon_recipe.jpg"
+            alt="Jajangmyeon Recipe"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">자장면 레시피</h3>
+          <p class="text-gray-700">중국식 짜장면을 한국 스타일로</p>
+        </div>
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/bibim_guksu_recipe.jpg"
+            alt="Bibim Guksu Recipe"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">비빔국수 레시피</h3>
+          <p class="text-gray-700">새콤달콤한 양념장이 특징</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer
+      class="bg-yellow-700 text-white text-center p-6 mt-8 rounded-t-2xl shadow-lg"
+    >
+      <p class="text-lg">&copy; 2025 Noodle World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

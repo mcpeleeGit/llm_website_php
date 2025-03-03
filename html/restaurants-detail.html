@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noodle World - 맛집 상세정보</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #fae1af);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#fdf6e3] to-[#fae1af]">
+    <!-- 네비게이션 바 -->
+    <nav
+      class="bg-yellow-600 p-4 shadow-lg flex justify-between items-center rounded-b-2xl"
+    >
+      <h1 class="text-3xl font-extrabold text-white">🍜 Noodle World</h1>
+      <ul class="hidden md:flex gap-8 text-white text-lg">
+        <li><a href="index.html" class="hover:underline">홈</a></li>
+        <li>
+          <a href="noodle-guide.html" class="hover:underline">국수 도감</a>
+        </li>
+        <li><a href="recipes.html" class="hover:underline">레시피</a></li>
+        <li>
+          <a href="restaurants.html" class="hover:underline">맛집 추천</a>
+        </li>
+        <li><a href="community.html" class="hover:underline">커뮤니티</a></li>
+        <li><a href="mypage.html" class="hover:underline">마이페이지</a></li>
+      </ul>
+    </nav>
+
+    <!-- 맛집 상세 페이지 -->
+    <div class="text-center p-8">
+      <h2 class="text-5xl font-extrabold text-gray-800">🏠 라멘 명가</h2>
+      <p class="text-gray-700 mt-3 text-lg">
+        진한 돈코츠 국물이 유명한 일본식 라멘 전문점
+      </p>
+    </div>
+
+    <section class="p-8 max-w-4xl mx-auto">
+      <img
+        src="/images/ramen_shop.jpg"
+        alt="Ramen Shop"
+        class="rounded-2xl shadow-xl w-full"
+      />
+
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">📍 위치</h3>
+        <p class="text-gray-700 mt-2">서울시 강남구 국수로 123</p>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">⏰ 영업시간</h3>
+        <p class="text-gray-700 mt-2">매일 11:00 - 22:00 (월요일 휴무)</p>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">🍜 대표 메뉴</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>돈코츠 라멘 - 12,000원</li>
+          <li>미소 라멘 - 11,000원</li>
+          <li>시오 라멘 - 10,000원</li>
+        </ul>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">⭐ 리뷰</h3>
+        <p class="text-gray-700 mt-2">
+          "국물이 정말 진하고 깊은 맛이 납니다. 면도 탱탱하고 너무 맛있어요!"
+        </p>
+        <p class="text-gray-700 mt-2">
+          "강남에서 찾기 힘든 정통 일본식 라멘, 적극 추천합니다!"
+        </p>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer
+      class="bg-yellow-700 text-white text-center p-6 mt-8 rounded-t-2xl shadow-lg"
+    >
+      <p class="text-lg">&copy; 2025 Noodle World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

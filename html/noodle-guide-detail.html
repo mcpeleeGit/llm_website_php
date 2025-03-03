@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noodle World - 라멘</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #fae1af);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#fdf6e3] to-[#fae1af]">
+    <!-- 네비게이션 바 -->
+    <nav
+      class="bg-yellow-600 p-4 shadow-lg flex justify-between items-center rounded-b-2xl"
+    >
+      <h1 class="text-3xl font-extrabold text-white">🍜 Noodle World</h1>
+      <ul class="hidden md:flex gap-8 text-white text-lg">
+        <li><a href="index.html" class="hover:underline">홈</a></li>
+        <li>
+          <a href="noodle-guide.html" class="hover:underline">국수 도감</a>
+        </li>
+        <li><a href="recipes.html" class="hover:underline">레시피</a></li>
+        <li>
+          <a href="restaurants.html" class="hover:underline">맛집 추천</a>
+        </li>
+        <li><a href="community.html" class="hover:underline">커뮤니티</a></li>
+        <li><a href="mypage.html" class="hover:underline">마이페이지</a></li>
+      </ul>
+    </nav>
+
+    <!-- 라멘 상세 페이지 -->
+    <div class="text-center p-8">
+      <h2 class="text-5xl font-extrabold text-gray-800">🍜 라멘 (Ramen)</h2>
+      <p class="text-gray-700 mt-3 text-lg">
+        일본을 대표하는 국수 요리로, 다양한 스타일의 국물이 특징입니다.
+      </p>
+    </div>
+
+    <section class="p-8 max-w-4xl mx-auto">
+      <img
+        src="/images/ramen.jpg"
+        alt="Ramen"
+        class="rounded-2xl shadow-xl w-full"
+      />
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">📌 기원과 역사</h3>
+        <p class="text-gray-700 mt-2">
+          라멘은 중국에서 일본으로 전해진 이후, 지역별로 독특한 스타일로
+          발전했습니다. 현재는 일본의 대표적인 면 요리로 자리 잡았습니다.
+        </p>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">🍜 주요 스타일</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li><b>쇼유 라멘</b>: 간장 베이스의 깔끔한 국물</li>
+          <li><b>미소 라멘</b>: 된장 베이스의 진한 감칠맛</li>
+          <li><b>시오 라멘</b>: 소금 베이스의 맑은 국물</li>
+          <li><b>돈코츠 라멘</b>: 돼지뼈를 우려낸 진한 국물</li>
+        </ul>
+      </div>
+
+      <div class="mt-6">
+        <h3 class="text-3xl font-bold text-gray-800">🥢 어떻게 먹을까?</h3>
+        <p class="text-gray-700 mt-2">
+          라멘은 뜨거운 국물과 함께 면을 빠르게 먹는 것이 특징이며, 취향에 따라
+          마늘, 고추기름, 김 등을 추가할 수 있습니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer
+      class="bg-yellow-700 text-white text-center p-6 mt-8 rounded-t-2xl shadow-lg"
+    >
+      <p class="text-lg">&copy; 2025 Noodle World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noodle World - 맛집 추천</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #fae1af);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#fdf6e3] to-[#fae1af]">
+    <!-- 네비게이션 바 -->
+    <nav
+      class="bg-yellow-600 p-4 shadow-lg flex justify-between items-center rounded-b-2xl"
+    >
+      <h1 class="text-3xl font-extrabold text-white">🍜 Noodle World</h1>
+      <ul class="hidden md:flex gap-8 text-white text-lg">
+        <li><a href="index.html" class="hover:underline">홈</a></li>
+        <li>
+          <a href="noodle-guide.html" class="hover:underline">국수 도감</a>
+        </li>
+        <li><a href="recipes.html" class="hover:underline">레시피</a></li>
+        <li>
+          <a href="restaurants.html" class="hover:underline">맛집 추천</a>
+        </li>
+        <li><a href="community.html" class="hover:underline">커뮤니티</a></li>
+        <li><a href="mypage.html" class="hover:underline">마이페이지</a></li>
+      </ul>
+    </nav>
+
+    <!-- 맛집 추천 페이지 -->
+    <div class="text-center p-8">
+      <h2 class="text-5xl font-extrabold text-gray-800">🏠 국수 맛집 추천</h2>
+      <p class="text-gray-700 mt-3 text-lg">
+        내 주변 최고의 국수 맛집을 찾아보세요!
+      </p>
+    </div>
+
+    <section class="p-8 max-w-5xl mx-auto">
+      <!-- 검색창 -->
+      <div class="flex justify-center mb-6">
+        <input
+          type="text"
+          placeholder="맛집 검색..."
+          class="p-3 rounded-l-lg border w-2/3 md:w-1/2"
+        />
+        <button class="bg-yellow-600 text-white px-4 py-3 rounded-r-lg">
+          검색
+        </button>
+      </div>
+
+      <!-- 맛집 리스트 -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/ramen_shop.jpg"
+            alt="Ramen Shop"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">라멘 명가</h3>
+          <p class="text-gray-700">
+            진한 돈코츠 국물이 유명한 일본식 라멘 전문점
+          </p>
+          <button
+            class="bg-yellow-600 text-white px-4 py-2 rounded-lg mt-3"
+            link="restaurants-detail.html"
+          >
+            자세히 보기
+          </button>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow-xl transform hover:scale-105 transition"
+        >
+          <img
+            src="/images/udon_shop.jpg"
+            alt="Udon Shop"
+            class="rounded-2xl w-full"
+          />
+          <h3 class="text-2xl font-bold mt-4">우동 한그릇</h3>
+          <p class="text-gray-700">쫄깃한 면발과 깊은 국물 맛이 일품</p>
+          <button class="bg-yellow-600 text-white px-4 py-2 rounded-lg mt-3">
+            자세히 보기
+          </button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Noodle World - 마이페이지</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(to bottom, #fdf6e3, #fae1af);
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-b from-[#fdf6e3] to-[#fae1af]">
+    <!-- 네비게이션 바 -->
+    <nav
+      class="bg-yellow-600 p-4 shadow-lg flex justify-between items-center rounded-b-2xl"
+    >
+      <h1 class="text-3xl font-extrabold text-white">🍜 Noodle World</h1>
+      <ul class="hidden md:flex gap-8 text-white text-lg">
+        <li><a href="index.html" class="hover:underline">홈</a></li>
+        <li>
+          <a href="noodle-guide.html" class="hover:underline">국수 도감</a>
+        </li>
+        <li><a href="recipes.html" class="hover:underline">레시피</a></li>
+        <li>
+          <a href="restaurants.html" class="hover:underline">맛집 추천</a>
+        </li>
+        <li><a href="community.html" class="hover:underline">커뮤니티</a></li>
+        <li><a href="mypage.html" class="hover:underline">마이페이지</a></li>
+      </ul>
+    </nav>
+
+    <!-- 마이페이지 -->
+    <div class="text-center p-8">
+      <h2 class="text-5xl font-extrabold text-gray-800">👤 마이페이지</h2>
+      <p class="text-gray-700 mt-3 text-lg">
+        내 활동 내역을 확인하고, 저장한 정보를 관리하세요.
+      </p>
+    </div>
+
+    <section class="p-8 max-w-4xl mx-auto">
+      <!-- 사용자 정보 -->
+      <div class="bg-white p-6 rounded-2xl shadow-xl mb-6">
+        <h3 class="text-2xl font-bold text-gray-800">🆔 내 정보</h3>
+        <p class="text-gray-700 mt-2"><b>이름:</b> 김국수</p>
+        <p class="text-gray-700 mt-2"><b>이메일:</b> kimnoodle@example.com</p>
+        <button class="bg-yellow-600 text-white px-6 py-3 rounded-lg mt-3">
+          정보 수정
+        </button>
+      </div>
+
+      <!-- 저장한 레시피 -->
+      <div class="bg-white p-6 rounded-2xl shadow-xl mb-6">
+        <h3 class="text-2xl font-bold text-gray-800">📖 저장한 레시피</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>
+            <a href="ramen-recipe.html" class="text-blue-600 hover:underline"
+              >라멘 레시피</a
+            >
+          </li>
+          <li>
+            <a href="pasta-recipe.html" class="text-blue-600 hover:underline"
+              >파스타 레시피</a
+            >
+          </li>
+          <li>
+            <a
+              href="bibim-guksu-recipe.html"
+              class="text-blue-600 hover:underline"
+              >비빔국수 레시피</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- 저장한 맛집 -->
+      <div class="bg-white p-6 rounded-2xl shadow-xl mb-6">
+        <h3 class="text-2xl font-bold text-gray-800">🏠 저장한 맛집</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>
+            <a
+              href="restaurant-detail.html"
+              class="text-blue-600 hover:underline"
+              >라멘 명가</a
+            >
+          </li>
+          <li>
+            <a
+              href="restaurant-detail.html"
+              class="text-blue-600 hover:underline"
+              >베트남 쌀국수</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- 작성한 글 -->
+      <div class="bg-white p-6 rounded-2xl shadow-xl">
+        <h3 class="text-2xl font-bold text-gray-800">📝 내가 작성한 글</h3>
+        <ul class="list-disc list-inside text-gray-700 mt-2">
+          <li>
+            <a href="community.html" class="text-blue-600 hover:underline"
+              >🍜 최고의 라멘 맛집 추천해주세요!</a
+            >
+          </li>
+          <li>
+            <a href="community.html" class="text-blue-600 hover:underline"
+              >🌶️ 비빔국수 양념장 비율</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 푸터 -->
+    <footer
+      class="bg-yellow-700 text-white text-center p-6 mt-8 rounded-t-2xl shadow-lg"
+    >
+      <p class="text-lg">&copy; 2025 Noodle World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
